@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>株式会社 ジェッツ | 広島の植栽管理・リフォーム</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+        .hero-overlay {
+            background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3));
+        }
+        .font-noto {
+            font-family: "Noto Sans JP", sans-serif;
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="font-noto text-gray-800 bg-gray-50 flex flex-col min-h-screen">
+
+    <!-- ナビゲーション -->
+    <header class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="#" class="flex flex-col">
+                        <span class="text-2xl font-bold text-green-700 tracking-tighter leading-none">JETZ</span>
+                        <span class="text-[10px] font-bold text-gray-500 tracking-widest mt-1">株式会社ジェッツ</span>
+                    </a>
+                </div>
+                <nav class="hidden md:flex space-x-8 items-center">
+                    <a href="#business" class="text-gray-600 hover:text-green-700 font-medium transition-colors">事業内容</a>
+                    <a href="#performance" class="text-gray-600 hover:text-green-700 font-medium transition-colors">施工実績</a>
+                    <a href="#about" class="text-gray-600 hover:text-green-700 font-medium transition-colors">会社概要</a>
+                    <a href="#contact" class="bg-green-700 text-white hover:bg-green-800 px-5 py-2.5 rounded-full text-sm font-bold transition-all shadow-md hover:shadow-lg">
+                        お問い合わせ
+                    </a>
+                </nav>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-500 hover:text-gray-700 p-2">
+                        <i data-lucide="menu" class="w-7 h-7"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- モバイルメニュー -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-gray-100 shadow-xl">
+            <div class="px-4 pt-2 pb-6 space-y-2">
+                <a href="#business" class="block px-3 py-4 text-base font-medium border-b border-gray-50">事業内容</a>
+                <a href="#performance" class="block px-3 py-4 text-base font-medium border-b border-gray-50">施工実績</a>
+                <a href="#about" class="block px-3 py-4 text-base font-medium border-b border-gray-50">会社概要</a>
+                <a href="#contact" class="block px-3 py-4 text-base font-bold text-green-700">お問い合わせ</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- ヒーロー -->
+    <section class="relative h-[70vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0">
+            <img src="https://images.unsplash.com/photo-1557429287-b2e26467fc2b?auto=format&fit=crop&q=80&w=1600" alt="緑豊かな庭園" class="w-full h-full object-cover" />
+            <div class="absolute inset-0 hero-overlay"></div>
+        </div>
+        <div class="relative z-10 text-center px-6">
+            <h1 class="text-3xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-md">
+                確かな技術で、<br>心地よい環境を守る。
+            </h1>
+            <p class="text-lg sm:text-xl text-gray-100 mb-10 max-w-2xl mx-auto font-medium">
+                広島を拠点に、植栽管理からリフォームまで<br class="hidden sm:block">丁寧な施工をお約束いたします。
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="#business" class="bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full text-lg font-bold transition-all shadow-lg inline-flex items-center justify-center">
+                    事業内容を見る
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 事業内容 -->
+    <section id="business" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-green-600 font-bold tracking-widest text-sm uppercase">Service</span>
+                <h2 class="text-3xl font-bold text-gray-900 mt-2">事業内容</h2>
+                <div class="w-12 h-1 bg-green-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-10">
+                <!-- 造園・植栽管理 -->
+                <div class="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 transition-all hover:shadow-xl">
+                    <div class="h-64 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1585320806297-9794b3e4eeae?auto=format&fit=crop&q=80&w=800" alt="手入れの行き届いた日本庭園" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute bottom-4 right-4 bg-green-600 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            景観維持のスペシャリスト
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="leaf" class="text-green-600 w-6 h-6 mr-3"></i>
+                            <h3 class="text-2xl font-bold">造園・植栽管理</h3>
+                        </div>
+                        <p class="text-gray-600 font-medium leading-relaxed mb-4">
+                            お庭の美しさを保ち、樹木の健康を守ります。季節に合わせた適切なメンテナンスを提供いたします。
+                        </p>
+                        <ul class="space-y-3 text-gray-600 font-medium">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i>剪定（せんてい）</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i>草刈・除草</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i>伐採（ばっさい）</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-green-500"></i>年間の植栽維持管理</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- リフォーム -->
+                <div class="group bg-gray-50 rounded-2xl overflow-hidden border border-gray-100 transition-all hover:shadow-xl">
+                    <div class="h-64 overflow-hidden relative">
+                        <!-- リフォームのイメージ画像を明るいリビングに差し替え -->
+                        <img src="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=800" alt="モダンで明るいリフォーム済みのキッチンとリビング" class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110">
+                        <div class="absolute bottom-4 right-4 bg-blue-600 text-white text-xs px-3 py-1 rounded-full opacity-0 group-hover:opacity-100 transition-opacity">
+                            理想の空間を実現
+                        </div>
+                    </div>
+                    <div class="p-8">
+                        <div class="flex items-center mb-4">
+                            <i data-lucide="home" class="text-blue-600 w-6 h-6 mr-3"></i>
+                            <h3 class="text-2xl font-bold">リフォーム</h3>
+                        </div>
+                        <p class="text-gray-600 font-medium leading-relaxed mb-4">
+                            住まいの価値を高め、より快適な暮らしをサポートするリフォーム。内装・外装のご相談を承ります。
+                        </p>
+                        <ul class="space-y-3 text-gray-600 font-medium">
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-500"></i>住宅リフォーム全般</li>
+                            <li class="flex items-center"><i data-lucide="check" class="w-4 h-4 mr-2 text-blue-500"></i>外構・エクステリア</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 施工実績 -->
+    <section id="performance" class="py-20 bg-green-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between gap-10">
+                <div class="md:w-1/2">
+                    <span class="text-green-600 font-bold tracking-widest text-sm uppercase">Achievements</span>
+                    <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-6">信頼と施工実績</h2>
+                    <p class="text-gray-700 leading-relaxed text-lg mb-6">
+                        株式会社ジェッツは、官公庁案件をはじめとする難易度の高い現場においても、多くの施工実績を有しております。安全管理と高い品質基準をクリアした確かな技術が私たちの強みです。
+                    </p>
+                    <div class="bg-white p-6 rounded-xl shadow-sm border-l-4 border-green-600">
+                        <h4 class="font-bold text-gray-900 mb-3 flex items-center">
+                            <i data-lucide="award" class="w-5 h-5 mr-2 text-orange-500"></i>主な施工先
+                        </h4>
+                        <ul class="space-y-2 text-gray-800 font-bold">
+                            <li>・海上自衛隊 呉地方総監部</li>
+                            <li>・その他 自衛隊関連施設</li>
+                            <li>・公共施設・企業・一般住宅等</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&q=80&w=800" alt="建設・施工のプロフェッショナルイメージ" class="rounded-2xl shadow-2xl border-4 border-white">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 会社概要 -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl font-bold text-gray-900">会社概要</h2>
+                <div class="w-12 h-1 bg-green-600 mx-auto mt-4"></div>
+            </div>
+
+            <div class="bg-white overflow-hidden">
+                <dl class="divide-y divide-gray-100 border-y border-gray-100">
+                    <div class="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                        <dt class="text-sm font-bold text-gray-500">会社名</dt>
+                        <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2 font-bold">株式会社 ジェッツ</dd>
+                    </div>
+                    <div class="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                        <dt class="text-sm font-bold text-gray-500">所在地</dt>
+                        <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2">
+                            〒734-0034<br>
+                            広島市南区丹那町66番26号
+                        </dd>
+                    </div>
+                    <div class="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                        <dt class="text-sm font-bold text-gray-500">代表者電話番号</dt>
+                        <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2">
+                            <a href="tel:09028640810" class="text-green-700 font-bold hover:underline">090-2864-0810</a>
+                        </dd>
+                    </div>
+                    <div class="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                        <dt class="text-sm font-bold text-gray-500">FAX</dt>
+                        <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2 font-medium">082-256-7121</dd>
+                    </div>
+                    <div class="py-6 sm:grid sm:grid-cols-3 sm:gap-4">
+                        <dt class="text-sm font-bold text-gray-500">メールアドレス</dt>
+                        <dd class="mt-1 text-base text-gray-900 sm:mt-0 sm:col-span-2">
+                            <a href="mailto:je@jetz39.pupu.jp" class="text-green-700 hover:underline">je@jetz39.pupu.jp</a>
+                        </dd>
+                    </div>
+                </dl>
+            </div>
+        </div>
+    </section>
+
+    <!-- フッター & コンタクト -->
+    <footer id="contact" class="bg-gray-900 text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 mb-16">
+                <div>
+                    <h2 class="text-3xl font-bold text-white mb-6 tracking-tighter">JETZ</h2>
+                    <p class="text-gray-400 mb-8 max-w-sm">
+                        植栽管理からリフォームまで、幅広いニーズに対応いたします。御見積は無料です。まずはお気軽にご連絡ください。
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-center text-gray-300">
+                            <i data-lucide="phone" class="w-5 h-5 mr-3 text-green-500"></i>
+                            <span class="text-lg font-bold">090-2864-0810</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i data-lucide="printer" class="w-5 h-5 mr-3 text-gray-500"></i>
+                            <span class="font-medium">082-256-7121</span>
+                        </div>
+                        <div class="flex items-center text-gray-300">
+                            <i data-lucide="mail" class="w-5 h-5 mr-3 text-gray-500"></i>
+                            <span class="font-medium">je@jetz39.pupu.jp</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-800 p-8 rounded-2xl">
+                    <h3 class="text-xl font-bold mb-6 flex items-center">
+                        <i data-lucide="message-square" class="w-5 h-5 mr-2 text-green-500"></i>
+                        お問い合わせ窓口
+                    </h3>
+                    <div class="grid grid-cols-1 gap-4">
+                        <a href="tel:09028640810" class="flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-bold py-4 rounded-xl transition-all shadow-lg active:scale-95">
+                            <i data-lucide="phone-call" class="w-5 h-5 mr-3"></i>
+                            お電話でのご相談はこちら
+                        </a>
+                        <a href="mailto:je@jetz39.pupu.jp" class="flex items-center justify-center bg-white hover:bg-gray-100 text-gray-900 font-bold py-4 rounded-xl transition-all shadow-lg active:scale-95">
+                            <i data-lucide="mail" class="w-5 h-5 mr-3"></i>
+                            メールフォームを起動
+                        </a>
+                    </div>
+                    <p class="mt-6 text-center text-xs text-gray-500">
+                        ※お急ぎの方はお電話にてお問い合わせください。
+                    </p>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-sm text-gray-500">
+                <p>&copy; <span id="year"></span> 株式会社ジェッツ All Rights Reserved.</p>
+                <div class="mt-4 md:mt-0">
+                    広島市南区丹那町66番26号
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+        document.getElementById('year').textContent = new Date().getFullYear();
+
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // リンククリック時にメニューを閉じる
+        const links = mobileMenu.querySelectorAll('a');
+        links.forEach(l => {
+            l.addEventListener('click', () => mobileMenu.classList.add('hidden'));
+        });
+    </script>
+</body>
+</html>
